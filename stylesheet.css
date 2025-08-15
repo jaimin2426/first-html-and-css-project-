@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-size: 24px;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20220205/pngtree-user-login-on-digital-screen-glow-user-login-spark-photo-photo-image_29066922.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: anim 2.5s linear infinite;
+}
+
+@keyframes anim {
+    100% { filter: hue-rotate(360deg); }
+}
+
+.login-box {
+    width: 550px;
+    height: 510px;
+    position: relative;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: fadeSlideUp 0.8s ease-out forwards;
+    animation-delay: 0.3s; 
+}
+
+/* Animation keyframes */
+@keyframes fadeSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+form {
+    width: 80%;
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 35px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+}
+
+/* Floating label when input is focused or has text */
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -5px;
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+.icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.remember-forgot {
+    margin: 0 0 32px 0;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.remember-forgot input[type="checkbox"] {
+    margin-right: 8px; 
+}
+
+
+
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+    /* transition: all 0.3s ease; */
+}
+
+/* button:hover {
+    background-color: #ff9800; 
+    color: #fff;
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.8);
+    transform: scale(1.05); 
+} */
+
+.register-link {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.register-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* .remember-forgot a:hover,
+.register-link a:hover {
+    color: #ff9800;
+    text-shadow: 0 0 5px rgba(255, 152, 0, 0.8);
+} */
+
+.input-box input:focus {
+    box-shadow: 0 2px 5px rgba(255, 152, 0, 0.8);
+    border-bottom: 2px solid #ff9800;
+}
+
+
