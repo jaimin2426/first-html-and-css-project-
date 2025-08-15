@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 * {
@@ -32,28 +31,23 @@ body {
 .login-box {
     width: 550px;
     height: 510px;
-    position: relative;
     border-radius: 15px;
     backdrop-filter: blur(15px);
     display: flex;
     justify-content: center;
     align-items: center;
-
-    
     opacity: 0; 
     transform: translateY(50px); 
     animation: fadeSlideUp 0.8s ease-out forwards;
     animation-delay: 0.3s; 
 }
 
-/* Animation keyframes */
 @keyframes fadeSlideUp {
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
 
 form {
     width: 80%;
@@ -95,7 +89,6 @@ h2 {
     padding: 0 35px 0 5px;
 }
 
-/* Floating label when input is focused or has text */
 .input-box input:focus ~ label,
 .input-box input:valid ~ label {
     top: -5px;
@@ -113,19 +106,15 @@ h2 {
 
 .remember-forgot {
     margin: 0 0 32px 0;
-    font-size: .9em;
+    font-size: 0.9em;
     color: #fff;
     display: flex;
     justify-content: space-between;
-    
 }
 
 .remember-forgot input[type="checkbox"] {
-    margin-right: 8px; 
+    margin-right: 8px;
 }
-
-
-
 
 .remember-forgot a {
     color: #fff;
@@ -142,18 +131,18 @@ button {
     font-size: 1em;
     color: #000;
     font-weight: 500;
-    /* transition: all 0.3s ease; */
+    transition: all 0.3s ease;
 }
 
 /* button:hover {
-    background-color: #ff9800; 
+    background-color: #ff9800;
     color: #fff;
     box-shadow: 0 0 15px rgba(255, 152, 0, 0.8);
-    transform: scale(1.05); 
+    transform: scale(1.05);
 } */
 
 .register-link {
-    font-size: .9em;
+    font-size: 0.9em;
     color: #fff;
     text-align: center;
     margin-top: 25px;
@@ -161,13 +150,12 @@ button {
 
 .register-link a {
     color: #fff;
-    text-decoration: none;
-    font-weight: 600;
     text-decoration: underline;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
-/* .remember-forgot a:hover,
-.register-link a:hover {
+/* .register-link a:hover {
     color: #ff9800;
     text-shadow: 0 0 5px rgba(255, 152, 0, 0.8);
 } */
@@ -176,5 +164,3 @@ button {
     box-shadow: 0 2px 5px rgba(255, 152, 0, 0.8);
     border-bottom: 2px solid #ff9800;
 }
-
-
